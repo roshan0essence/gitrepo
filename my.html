@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .reg_form{
+            background-color: #fff;
+            padding : 20px 50px;
+            border-radius: 10px;
+            margin: auto;
+            width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0.2) ;
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        h2{
+            font-size: 20px;
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="password"],
+        select,
+        input[type="email"]{
+            padding: 10px;
+            width: 100%;
+            margin:10px 0 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"]{
+            width: 100%;
+            background-color: burlywood;
+            color:azure;
+            padding: 10px;
+            border:none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="reg_form"> 
+        <form method="post">
+            <h2> Registration Form </h2>
+            <label for="username"> Username</label>
+            <input type="text" id="username" name="username" placeholder="Eg: Dipss">
+
+            <label for="email"> Email</label>
+            <input type="email" id="email" name="email" placeholder="eg: dipss_is_bitch@gmail.com">
+
+            <label for="password"> Password </label>
+            <input type="password" id="password" name="password" placeholder="eg: dips1234">
+
+            <label for="confirm"> Confirm Password</label>
+            <input type="password" id="confirm" name="password" required>
+
+            
+            <label for="gender"> Gender</label>
+            <select id="gender" name="gender" required>
+                <option value=""> --select-- </option>
+                <option value="Male"> Male </option>
+                <option value="Female"> Female </option>
+                <option value="Dips"> Dipss </option>
+                <option value="Others"> Others </option>  
+            </select>
+            
+            <input type="submit" id="register" name="register">
+        </form>
+    </div>
+</body>
+</html>
